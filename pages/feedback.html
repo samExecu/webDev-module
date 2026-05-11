@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../css/feedback.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <div class="form">
+      <h2>Feedback Form</h2>
+      <br />
+      <form method="get">
+        <h3>Full Name</h3>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          minlength="3"
+          required
+        />
+
+        <h3>Email</h3>
+        <input type="email" placeholder="Enter email" required />
+        <br />
+        <h3>Rating</h3>
+        <label><input type="radio" name="rating" /> Very Satisfied </label>
+        <label><input type="radio" name="rating" /> Satisfied</label>
+        <label><input type="radio" name="rating" required /> Neutral</label>
+        <label><input type="radio" name="rating" /> Unsatisfied</label>
+        <br />
+        <h3>Interests</h3>
+        <label><input type="checkbox" /> Web Development</label>
+        <label><input type="checkbox" /> Mobile Development</label>
+        <label><input type="checkbox" /> AI & Machine Learning</label>
+        <br />
+        <h3>Country</h3>
+        <select required>
+          <option value="">Select country</option>
+          <option>Nepal</option>
+          <option>America</option>
+          <option>Israel</option>
+        </select>
+        <br />
+        <label>Write your feedback here</label>
+        <textarea maxlength="300" placeholder="Feedback..."></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

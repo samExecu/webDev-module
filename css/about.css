@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e2935;
+  color: white;
+}
+
+.navbar {
+  padding: 16px;
+  position: sticky;
+  display: flex;
+  top: 0;
+  gap: 32px;
+  background-color: #283443;
+  justify-content: center;
+}
+
+.navbar > a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.navbar > a:hover {
+  background-color: #3e526a;
+  border-radius: 15px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 12px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  width: 50%;
+}
