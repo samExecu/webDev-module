@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Bricolage Grotesque";
 }
 
 body {
@@ -29,6 +30,12 @@ body {
 .navbar > a:hover {
   background-color: #3e526a;
   border-radius: 15px;
+}
+
+h1,
+h2,
+h3 {
+  color: #c8a96e;
 }
 
 form {
