@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque";
+}
+
+body {
+  background-color: #1e2935;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  color: #c8a96e;
+}
+
+.photos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.photos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.photos-flex img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.photos-flex img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(200, 169, 110, 0.4);
+}
+
+.photos-grid {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.photos-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.photos-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(200, 169, 110, 0.4);
+}
+
+@media (max-width: 768px) {
+  .photos-flex {
+    flex-basis: 100%;
+  }
+
+  .photos-flex img {
+    flex: 0 0 100%;
+  }
+
+  .photos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .photos-flex {
+    flex-basis: calc(50% - 7.5px);
+  }
+
+  .photos-flex img {
+    flex: 0 0 calc(50% - 7.5px);
+  }
+
+  .photos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .photos-flex {
+    flex-basis: calc(25% - 11.25px);
+  }
+
+  .photos-flex img {
+    flex: 0 0 calc(25% - 11.25px);
+  }
+
+  .photos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
