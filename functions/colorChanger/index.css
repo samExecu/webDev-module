@@ -1,0 +1,13 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  border: 2px solid #333;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
